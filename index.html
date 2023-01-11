@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+
+    <!-- !CSS File -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>CRUD</h1>
+            <p>Product Mangment System</p>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Title" class="title">
+            <div class="counttotal">
+                <input onkeyup="getTotall()" type="number" placeholder="Price" class="price">
+                <input onkeyup="getTotall()" type="number" placeholder="Taxes" class="taxes">
+                <input onkeyup="getTotall()" type="number" placeholder="Ads" class="ads">
+                <input onkeyup="getTotall()" type="number" placeholder="Discount" class="discount">
+                <small class="totall"></small>
+            </div>
+            <input type="number" placeholder="Count" class="count">
+            <input type="text" placeholder="Category" class="category">
+            <button class="submit">Create</button>
+        </div>
+        <div class="output">
+            <div class="searchblock">
+                <input onkeyup="searchData(this.value)" type="text" placeholder="Seach" class="search">
+                <div class="btnsreach">
+                    <button onclick="getsearchMood(this.id)" id="sreachtitle">Sreach By Title</button>
+                    <button onclick="getsearchMood(this.id)" id="sreachcategory">Sreach By Category</button>
+                </div>
+            </div>
+            <div class="deleteAll">
+
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>totall</th>
+                        <th>catgory</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
